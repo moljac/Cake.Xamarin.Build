@@ -21,13 +21,13 @@
       <Summary>NOT RECOMMENDED FOR PUBLIC USE: Cake Build addon to provide Aliases for Xamarin product build scripts.</Summary>
       <PackageLicenseUrl>https://raw.githubusercontent.com/Redth/Cake.Xamarin.Build/master/LICENSE.md</PackageLicenseUrl>
       <PackageProjectUrl>https://github.com/Redth/Cake.Xamarin.Build</PackageProjectUrl>
-      <PackageIconUrl>https://raw.githubusercontent.com/Redth/Cake.Xamarin.Build/master/icon.png</PackageIconUrl>
+      <PackageIconUrl>https://cdn.rawgit.com/cake-contrib/graphics/a5cf0f881c390650144b2243ae551d5b9f836196/png/cake-contrib-medium.png</PackageIconUrl>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Cake.Core" Version="0.26.1" />
-    <PackageReference Include="Cake.Common" Version="0.26.1" />
-    <PackageReference Include="Cake.XCode" Version="4.0.0" />
-    <PackageReference Include="Cake.Xamarin" Version="3.0.0" />
+    <PackageReference Include="Cake.Core" Version="0.28.0" PrivateAssets="All" />
+    <PackageReference Include="Cake.Common" Version="0.28.0" PrivateAssets="All" />
+    <PackageReference Include="Cake.XCode" Version="4.0.0" PrivateAssets="All" />
+    <PackageReference Include="Cake.Xamarin" Version="3.0.0" PrivateAssets="All" />
   </ItemGroup>
 </Project>

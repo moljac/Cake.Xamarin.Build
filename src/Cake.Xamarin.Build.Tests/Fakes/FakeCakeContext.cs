@@ -27,7 +27,8 @@ namespace Cake.Xamarin.Build.Tests.Fakes
             var config = new Core.Configuration.CakeConfigurationProvider(fileSystem, environment).CreateConfiguration(testsDir, new Dictionary<string, string>());
             var toolResolutionStrategy = new ToolResolutionStrategy(fileSystem, environment, globber, config);
             var toolLocator = new ToolLocator(environment, toolRepo, toolResolutionStrategy);
-            context = new CakeContext(fileSystem, environment, globber, log, args, processRunner, registry, toolLocator);
+            var data = new FakeDataService();
+            context = new CakeContext(fileSystem, environment, globber, log, args, processRunner, registry, toolLocator, data);
             context.Environment.WorkingDirectory = testsDir;
         }
 
